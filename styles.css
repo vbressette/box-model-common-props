@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Valora Bressette
 */
 /* -------------------------------------------------- */
 /* 
@@ -323,6 +323,7 @@ footer{
 /* content, padding, borders, margin, dev tools, inline, & block elements */
 
 /* For both links in the section */
+
 /* 
     TO DO: add styles to both links in this section that will:
         - make these links display as block-level elements
@@ -343,6 +344,13 @@ footer{
     border: 4px solid var(--dk-blue);
     margin: 1rem auto;
     border-radius: 0 24px 24px 0;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0.3);
 }
 
 /* For the paragraph with placeholder text */
@@ -358,6 +366,13 @@ footer{
     border: 6px solid var(--lt-blue);
     margin: 1rem auto 2rem auto;
     border-radius: 8px;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0.3);
 }
 
 /* For the last paragraph in the section */
@@ -377,9 +392,20 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color:var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    border-style: dashed;
+    margin-top: 16px;
+    margin-right:60px;
+    margin-bottom:32px; 
+    margin-left:8px;
+    padding-top: 32px;
+    padding-right:8px;
+    padding-bottom: 16px;
+    padding-left: 60px;
 }
 
+    
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
 #section2 div{
     border: 1px solid var(--teal);
@@ -394,7 +420,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color:var(--dk-blue);
+    color:white;
+    border-color:var(--lt-blue);
+    box-shadow:var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
@@ -418,7 +447,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
-    
+    display:block;
+    width: 200px;
+    height:auto;
+    margin: 0 auto;
+    filter:drop-shadow(small);  
 }
 
 #section3 div::before{
@@ -460,6 +493,17 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content:"";
+    display:block;
+    width:50px;
+    height:50px;
+    background-color:var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index:2;
+    margin-top:-50px;
+    margin-left: 25px;
+
 }
 
 
@@ -481,6 +525,10 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
+    margin-top:1rem;
+    margin-right:0;
+    margin-bottom:1rem;
+    margin-left:0;
 
 }
 
@@ -489,10 +537,12 @@ footer{
 
 /* Add the image to the div in this section. The puppy-photo image is square and was edited to be 100px by 100px */
 #bkgrnd-img-default{
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     background-image: url("images/puppy-photo.jpg");
+    background-repeat: repeat;
+    background-position: top left;
 }
 
 /* ------------- SECTION 6 STYLES ---------------- */
@@ -518,6 +568,9 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
+    background-color:var(--lt-blue);
+    align-items:center;
+    background: repeat url(images/puppy-photo.jpg);
     
 }
 
@@ -545,7 +598,9 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+    background-color:var(--light-gray);
+    scale:110%;
+    background:url(images/wood.png);
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -602,6 +657,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -611,6 +667,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear:both;
     
 }
 
